@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        #topnav {
+            top: 0;
+            left: 0;
+            right: 0;
+            width:100%;
+            height: 70px;
+            position: fixed;
+            background-color: #767171;
+        }
+        #logo {
+            width:100px;
+            height: 40px;
+            float: left;
+            background-color: aliceblue;
+            margin: 10px 20px;
+        }
+        #topnavbuttons {
+            margin: 10px 20px;
+            float: right;
+            overflow: hidden;
+            zoom: 1;
+        }
+        #topnavbuttons button {
+            width: 200px;
+            height: 40px;
+            border: 3px solid #61ddac;
+        }
+        #piccontainer {
+            top:70px;
+            width:100%;
+            float: none;
+            overflow:hidden;
+            zoom: 1;
+        }
+        #piccontainer img{
+            float:left;
+            width:1483px;
+        }
+        #intro {
+            overflow: hidden;
+            zoom: 1;
+            margin:0 auto;
+            width: 613px;
+        }
+        .selector {
+            float:left;
+            width:200px;
+            height:50px;
+            border: 2px solid #61ddac;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="topnav">
+    <div id="logo">
+        <p>I have not designed a logo yet, so here will leave blank</p>
+    </div>
+    <div id="topnavbuttons">
+        <button>Log in</button>
+        <a herf=""><button>Sign up</button></a>
+    </div>
+</div>
+<div id="picshow">
+    <div id="piccontainer">
+        <img src="Bakcup.jpg">
+    </div>
+</div>
+<h1 style="text-align: center">Club Management Platform</h1>
+<div id="intro">
+    <div class="selector" onclick="changeselector(this)"><h3>Students</h3></div>
+    <div class="selector" onclick="changeselector(this)"><h3>Facilities</h3></div>
+    <div class="selector" onclick="changeselector(this)"><h3>Parents</h3></div>
+</div>
+
+<script>
+    function changeselector (element) {
+        var selectlist = document.getElementsByClassName("selector");
+        for (i=0;i<selectlist.length;i++) {
+            selectlist[i].style.borderBottom = "2px solid #61ddac";
+        }
+        element.style.borderBottom = "none";
+    }
+</script>
+</body>
+</html>
