@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #large {
+            width:100%;
+            background-color: #767171;
+        }
+        #small {
+            text-align: center;
+            width:1000px;
+            margin:0 auto;
+            background-color: beige;
+            overflow: hidden;
+            zoom: 1;
+        }
+        #small #search {
+            float:right;
+        }
+        #search div{
+            position: relative;
+        }
+        #search input{
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            left: -100px;
+        }
+    </style>
+</head>
+<body>
+<div id="large">
+    <div id="small">
+        Describe the city you live in
+        <div id="search">
+            <div>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
