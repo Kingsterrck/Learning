@@ -54,6 +54,91 @@
             color:#8B8B8B;
             font-size: 15px;
          }
+        #topIntro {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        #topNav {
+            position: absolute;
+            width:100%;
+        }
+        #topNav div {
+            width:1000px;
+            margin:0 auto; /*center*/
+            overflow: hidden;
+            zoom: 1;
+        }
+        #topNav ul {
+            overflow: hidden;
+            zoom:1;
+            float: left;
+        }
+        #topNav li {
+            float: left;
+            background-color: #363636;
+            border-right:solid white 1px;
+            text-align: center;
+
+        }
+        #topNav li:hover {
+            background-color: #00ada7;
+        }
+        #topNav a {
+            text-decoration: none;
+            color: white;
+            width: 97px;
+            padding: 13px 0px;
+            display: inline-block;
+            font-size: 15px;
+        }
+        #topNav form {
+            overflow: hidden;
+            zoom:1;
+            background-image: url("searchBox.png");
+            float: left;
+        }
+        #topNav input {
+            float: left;
+            height:46px;
+            border: none;
+        }
+        #topNav input:first-child {
+            width: 160px;
+            background: none;
+        }
+        #topNav input:last-child {
+            width:56px;
+            background: none;
+        }
+        #container2 {
+            overflow: hidden;
+            zoom:1;
+        }
+        #container {
+            width:1000px;
+            height:230px;
+            margin: 0px auto;
+            background-image: url("dropdown.png");
+            position: relative;
+        }
+        #curtain {
+            width:100%;
+            height: 100%;
+            background-image: url("semitransparent.png");
+            opacity:50%;
+            position: absolute;
+            top:-230px;
+        }
+        #dropdownIntro {
+            height: 100%;
+            padding: 47px 0;
+        }
+        #dropdownIntro a {
+            float:left;
+            margin:0 57px;/* (1000-135*4)/8 */
+            color:white;
+            background: none;
+        }
     </style>
 </head>
 <body>
@@ -73,5 +158,78 @@
         </div>
     </div>
 </div>
+
+<div id="topIntro">
+    <div id="topNav">
+        <div>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">新闻中心</a></li>
+                <li><a href="#">产品展示</a></li>
+                <li><a href="#">成功案例</a></li>
+                <li><a href="#">在线留言</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">资质荣誉</a></li>
+            </ul>
+            <form>
+                <input type="text" placeholder="请输入关键字">
+                <input type="submit" value="">
+            </form>
+        </div>
+    </div>
+    <div>
+        <img src="topBanner.png">
+    </div>
+</div>
+
+<div id="container2">
+    <div id="container" onmouseover="dropdown()" onmouseout="goUp()">
+        <div id="curtain">
+            <div id="dropdownIntro">
+                <a href="#"><img src="ideas.png"></a>
+                <a href="#"><img src="teams.png"></a>
+                <a href="#"><img src="cases.png"></a>
+                <a href="#"><img src="service.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var timer1, timer2;
+    var topspace = -230;
+    function dropdown() {
+        if (timer2) {
+            clearInterval(timer2);
+        }
+        timer1 = setInterval(down, 1);
+        function down(){
+            if (topspace == 0) {
+                document.getElementById("curtain").style.top= topspace + "px";
+                clearInterval(timer1);
+            }
+            else {
+                document.getElementById("curtain").style.top= topspace + "px";
+                topspace++;
+            }
+        }
+    }
+    function goUp() {
+        if (timer1) {
+            clearInterval(timer1);
+        }
+        timer2 = setInterval(up, 1);
+        function up(){
+            if (topspace == -230) {
+                document.getElementById("curtain").style.top= topspace + "px";
+                clearInterval(timer2);
+            }
+            else {
+                document.getElementById("curtain").style.top= topspace + "px";
+                topspace--;
+            }
+        }
+    }
+</script>
 </body>
 </html>
