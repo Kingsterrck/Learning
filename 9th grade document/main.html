@@ -27,9 +27,33 @@
             height: 50px;
             float: right;
         }
+        #main {
+            margin:0 auto;
+        }
+        #newMessage {
+            border-bottom: #767171 solid 1px;
+        }
+        #newMessage div {
+            border: #61ddac solid 2px;
+            overflow: hidden;
+            zoom:1;
+            border-radius: 10px;
+        }
+        .left {
+            float:left;
+            margin-left: 10px;
+        }
+        .right {
+            float:right;
+            margin-right: 10px;
+            color:red;
+            font-size: 20px;
+        }
     </style>
+
 </head>
 <body>
+<h1>This is a demo version</h1>
 <div id="head">
     <h1 style="float: left">Welcome Back</h1>
     <div id="dropdown">
@@ -37,5 +61,24 @@
         <h1>&#128317;</h1>
     </div>
 </div>
+<div id="main">
+    <div id="newMessage">
+        <h1 style="color: #00BACB">New Messages</h1>
+        <div>
+            <h3 class="left">Volleyball varsity</h3>
+            <h3 class="right">1</h3>
+        </div>
+        <br>
+        <div>
+            <h3 class="left">Physics Inquiry</h3>
+            <h3 class="right">4</h3>
+        </div>
+    </div>
+    <br>
+</div>
+<script>
+    var wide = window.innerWidth;
+    document.getElementById("main").style.width=0.8*wide + "px"; //set the width
+</script>
 </body>
 </html>
