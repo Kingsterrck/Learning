@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -56,7 +56,8 @@
          }
         #topIntro {
             position: relative;
-            margin-bottom: 15px;
+            padding-bottom: 15px;
+            background-color: #f7f7f7;
         }
         #topNav {
             position: absolute;
@@ -113,6 +114,9 @@
         #container2 {
             overflow: hidden;
             zoom:1;
+            background-color: #f7f7f7;
+            padding-bottom: 15px;
+            border-bottom:2px solid #696969;
         }
         #container {
             width:1000px;
@@ -127,7 +131,7 @@
             background-image: url("semitransparent.png");
             opacity:50%;
             position: absolute;
-            top:-230px;
+            top:0px;
         }
         #dropdownIntro {
             height: 100%;
@@ -138,6 +142,66 @@
             margin:0 57px;/* (1000-135*4)/8 */
             color:white;
             background: none;
+        }
+        #exampleContainer {
+            width:1000px;
+            margin:0 auto;
+        }
+        h3 {
+            border-left: #61ddac 10px solid;
+        }
+        #example {
+            float:left;
+            width:700px;
+        }
+        #example1 {
+            width:330px;
+            margin:6px;
+        }
+        #example2 {
+            width:330px;
+            margin:6px;
+        }
+        #example3 {
+            width:155px;
+            margin:6px;
+            float:left;
+        }
+        #example4 {
+            width:155px;
+            margin:6px;
+            float:left;
+        }
+        #example5 {
+            width:680px;
+        }
+        .floatingOne {
+            float:left;
+        }
+        #rightPanel {
+            float:right;
+            width:300px;
+        }
+        #rightPanel ul {
+            list-style: none;
+            overflow: hidden;
+            zoom:1;
+            list-style: ;
+        }
+        #rightPanel li {
+            width:150px;
+            height:40px;
+            float:left;
+        }
+        #rightPanel a{
+            text-decoration: none;
+            color: black;
+        }
+        #rightPanel a:hover {
+            color:red;
+        }
+        #RPTop {
+            height:200px;
         }
     </style>
 </head>
@@ -179,7 +243,7 @@
         </div>
     </div>
     <div>
-        <img src="topBanner.png">
+        <img src="topBanner.png" style="width:1483px">
     </div>
 </div>
 
@@ -195,41 +259,80 @@
         </div>
     </div>
 </div>
+<div id="exampleContainer">
+    <div id="example">
+        <h3>&nbsp;装修效果图</h3>
+        <div>
+            <div class="floatingOne">
+                <img src="example1.png" id="example1">
+            </div>
+            <div class="floatingOne">
+                <div>
+                    <img src="example2.png" id="example2">
+                </div>
+                <div>
+                    <img src="example3.png" id="example3">
+                </div>
+                <div>
+                    <img src="example4.png" id="example4">
+                </div>
+            </div>
+        </div>
+        <img src="example5.png" id="example5">
+    </div>
+    <div id="rightPanel">
+        <div id="RPTop">
+            <h3>案例展示</h3>
+            <ul>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+                <li><a href="#">厂房装修</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 <script>
     var timer1, timer2;
     var topspace = -230;
-    function dropdown() {
-        if (timer2) {
-            clearInterval(timer2);
-        }
-        timer1 = setInterval(down, 1);
-        function down(){
-            if (topspace == 0) {
-                document.getElementById("curtain").style.top= topspace + "px";
-                clearInterval(timer1);
-            }
-            else {
-                document.getElementById("curtain").style.top= topspace + "px";
-                topspace++;
-            }
-        }
-    }
-    function goUp() {
-        if (timer1) {
-            clearInterval(timer1);
-        }
-        timer2 = setInterval(up, 1);
-        function up(){
-            if (topspace == -230) {
-                document.getElementById("curtain").style.top= topspace + "px";
-                clearInterval(timer2);
-            }
-            else {
-                document.getElementById("curtain").style.top= topspace + "px";
-                topspace--;
-            }
-        }
-    }
+    // function dropdown() {
+    //     if (timer2) {
+    //         clearInterval(timer2);
+    //     }
+    //     timer1 = setInterval(down, 1);
+    //     function down(){
+    //         if (topspace == 0) {
+    //             document.getElementById("curtain").style.top= topspace + "px";
+    //             clearInterval(timer1);
+    //         }
+    //         else {
+    //             document.getElementById("curtain").style.top= topspace + "px";
+    //             topspace++;
+    //         }
+    //     }
+    // }
+    // function goUp() {
+    //     if (timer1) {
+    //         clearInterval(timer1);
+    //     }
+    //     timer2 = setInterval(up, 1);
+    //     function up(){
+    //         if (topspace == -230) {
+    //             document.getElementById("curtain").style.top= topspace + "px";
+    //             clearInterval(timer2);
+    //         }
+    //         else {
+    //             document.getElementById("curtain").style.top= topspace + "px";
+    //             topspace--;
+    //         }
+    //     }
+    // }
 </script>
 </body>
 </html>
