@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volleyball varsity</title>
+    <style>
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        #head {
+            width: 100%;
+            height:70px;
+            background-color: #b9b9b9;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            zoom:1;
+            border-radius: 5px;
+        }
+        #dropdown {
+            float:right;
+        }
+        #dropdown div {
+            float:left;
+            width:130px;
+        }
+        #dropdown h1 {
+            width:50px;
+            float:left;
+            margin-top: 10px;
+        }
+        #dropdown img {
+            height: 50px;
+            float: left;
+            margin-top: 10px;
+        }
+        #intro {
+            overflow: hidden;
+            zoom: 1;
+            margin:25px auto;
+            width: 816px;
+        }
+        .selector {
+            float:left;
+            width:200px;
+            height:50px;
+            border: 2px solid #61ddac;
+            text-align: center;
+        }
+        #container {
+            width:1000px;
+            margin:0 auto;
+        }
+        .chatBox {
+            width:500px;
+            height:200px;
+            margin-left: 40px;
+            border: #00BACB 2px solid;
+            border-radius: 10px;
+        }
+        #chat img {
+            width:30px;
+        }
+        #enter {
+            border-top:2px grey solid;
+        }
+        #enter input {
+            width:1000px;
+            height:200px;
+        }
+        #ChatDemo {
+            display:none;
+        }
+        #targetChat {
+            margin-left: 20px;
+        }
+        #bulletin {
+            display: none;
+        }
+        #addBulletin {
+            width:200px;
+            height:50px;
+            border: #61ddac 2px solid;
+            border-radius: 5px;
+        }
+        #addBulletin h1 {
+            text-align: center;
+            margin-top:10px;
+        }
+        .indieBulletin {
+            width:100%;
+            height:300px;
+            border: 2px solid #00BACB;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #event {
+            display: none;
+        }
+        td {
+            width:140px;
+            border:1px #00BACB solid;
+            height:50px;
+        }
+        #files {
+            display: none;
+        }
+        #files a {
+            width:200px;
+            height:200px;
+            float:left;
+            margin:20px;
+            border:2px solid #61ddac;
+            border-radius: 10px;
+        }
+        .indieFiles img {
+            width:120px;
+            margin:20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="head">
+    <h1 style="float: left;margin-left:15px">Volleyball varsity</h1>
+    <div id="dropdown">
+        <div>
+            <h1 onclick="dropdown()">&#128317;</h1>
+            <img src="cute%20dog%20circle.png">
+        </div>
+    </div>
+</div>
+<div id="intro">
+    <div class="selector"  id="chatSelector" onclick="changeChat()" style="border-bottom: none"><h3>Chat</h3></div>
+    <div class="selector" id="bulletinSelector" onclick="changeBulletin()"><h3>Bulletin</h3></div>
+    <div class="selector" id="eventSelector" onclick="changeEvent()"><h3>Event</h3></div>
+    <div class="selector" id="fileSelector" onclick="changeFile()"><h3>Files</h3></div>
+</div>
+<div id="container">
+    <div id="chat" class="content">
+        <div>
+            <div class="chatBox"></div>
+            <img src="peanutProfile.jpg">
+        </div>
+        <div>
+            <div class="chatBox"></div>
+            <img src="kingstarProfile.jpg">
+        </div>
+        <div id="ChatDemo">
+            <div class="chatBox">
+                <p id="targetChat"></p>
+            </div>
+            <img src="cute%20dog%20circle.png">
+        </div>
+        <div id="enter">
+            <input type="text" id="chatEnterBox" placeholder="Say something...">
+            <button onclick="displayChatDemo()">Send</button>
+        </div>
+    </div>
+    <div id="bulletin" class="content">
+        <div id="addBulletin" onclick="window.alert('you dont have permission to do so, contact administrator')">
+            <h1>+ Add</h1>
+        </div>
+        <div class="indieBulletin" style="margin-top:20px">
+            <h4>Posted by Wanyong Xie</h4>
+            <h1>[Enter message]</h1>
+        </div>
+        <div class="indieBulletin">
+            <h4>Posted by Wanyong Xie</h4>
+            <h1>[Enter message]</h1>
+        </div>
+    </div>
+    <div id="event" class="content">
+        <table>
+            <tr>
+                <td>Sunday</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="files" class="content">
+        <a href="demo%20word.docx" download="demo word.docx">
+            <div class="indieFiles">
+                <img src="word.png">
+            </div>
+        </a>
+        <a href="demo%20word.docx" download="demo word.docx">
+            <div class="indieFiles">
+                <img src="word.png">
+            </div>
+        </a>
+        <a href="demo%20excel.xlsx" download="demo excel.xlsx">
+            <div class="indieFiles">
+                <img src="excel.png">
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    function changeSelector2 () {
+        var selectlist = document.getElementsByClassName("selector");
+        for (i=0;i<selectlist.length;i++) {
+            selectlist[i].style.borderBottom = "2px solid #61ddac";
+        }
+        var contentList = document.getElementsByClassName("content");
+        for (i=0;i<contentList.length;i++) {
+            contentList[i].style.display = "none";
+        }
+    }
+    function displayChatDemo() {
+        var content = document.getElementById("chatEnterBox").value;
+        document.getElementById("targetChat").innerHTML = content;
+        document.getElementById("ChatDemo").style.display = "block";
+        document.getElementById("chatEnterBox").value="";
+    }
+    function changeChat() {
+        changeSelector2();
+        document.getElementById("chatSelector").style.borderBottom = "none";
+        document.getElementById("chat").style.display = "block";
+    }
+    function changeBulletin() {
+        changeSelector2();
+        document.getElementById("bulletinSelector").style.borderBottom = "none";
+        document.getElementById("bulletin").style.display = "block";
+    }
+    function changeEvent() {
+        changeSelector2();
+        document.getElementById("eventSelector").style.borderBottom = "none";
+        document.getElementById("event").style.display = "block";
+    }
+    function changeFile() {
+        changeSelector2();
+        document.getElementById("fileSelector").style.borderBottom = "none";
+        document.getElementById("files").style.display = "block";
+    }
+</script>
+</body>
+</html>
