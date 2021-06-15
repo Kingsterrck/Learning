@@ -33,6 +33,33 @@
             float: left;
             margin-top: 10px;
         }
+        #menu {
+            position: absolute;
+            top:70px;
+            left:1300px;
+            height:124px;
+            width:130px;
+            background-color: white;
+            border:2px solid #767171;
+            border-radius:10px;
+            display: none;
+        }
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu li {
+            height:30px;
+            width:100px;
+            padding: 0 10px;
+            border-bottom: #696969 solid 1px;
+        }
+        #menu a {
+            text-align: center;
+            text-decoration: none;
+            color:black;
+        }
         #intro {
             overflow: hidden;
             zoom: 1;
@@ -121,13 +148,21 @@
 </head>
 <body>
 <div id="head">
-    <h1 style="float: left;margin-left:15px">Volleyball varsity</h1>
+    <h1 style="float: left;margin-left:15px">Volleyball varsity <a href="main.html">Back to home</a></h1>
     <div id="dropdown">
         <div>
             <h1 onclick="dropdown()">&#128317;</h1>
             <img src="cute%20dog%20circle.png">
         </div>
     </div>
+</div>
+<div id="menu">
+    <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Go Premium</a></li>
+        <li><a href="home.html">Log out</a></li>
+    </ul>
 </div>
 <div id="intro">
     <div class="selector"  id="chatSelector" onclick="changeChat()" style="border-bottom: none"><h3>Chat</h3></div>
@@ -264,6 +299,16 @@
         changeSelector2();
         document.getElementById("fileSelector").style.borderBottom = "none";
         document.getElementById("files").style.display = "block";
+    }
+    var clicktime = 0;
+    function dropdown(){
+        if (clicktime % 2 == 0) {
+            document.getElementById("menu").style.display="block";
+            clicktime++;
+        } else {
+            document.getElementById("menu").style.display="none";
+            clicktime++;
+        }
     }
 </script>
 </body>

@@ -7,7 +7,9 @@
         *{
             margin: 0;
             padding: 0;
-            list-style: none;
+        }
+        img {
+            border:none;
         }
         #head {
             background-image: url("Taryhead.jpg");
@@ -45,7 +47,7 @@
         #headBoxBottom span {
             display: inline-block;
             margin-top: 20px;
-            margin-right:180px;
+            margin-right:168px;
         }
         #headBoxBottom span:first-child {
             color: #7F4A55;
@@ -73,6 +75,7 @@
             overflow: hidden;
             zoom:1;
             float: left;
+            list-style: none;
         }
         #topNav li {
             float: left;
@@ -103,6 +106,10 @@
             height:46px;
             border: none;
         }
+        #topNav input[type="submit"] {
+            width:55px;
+            background: none;
+        }
         #topNav input:first-child {
             width: 160px;
             background: none;
@@ -124,12 +131,14 @@
             margin: 0px auto;
             background-image: url("dropdown.png");
             position: relative;
+            overflow: hidden;
+            zoom:1;
         }
         #curtain {
             width:100%;
             height: 100%;
             background-image: url("semitransparent.png");
-            opacity:50%;
+            opacity:60%;
             position: absolute;
             top:0px;
         }
@@ -137,11 +146,17 @@
             height: 100%;
             padding: 47px 0;
         }
+        #dropdownIntro a:first-child {
+            margin-left: 57px;
+        }
         #dropdownIntro a {
             float:left;
-            margin:0 57px;/* (1000-135*4)/8 */
+            margin-left:114px;
             color:white;
             background: none;
+        }
+        #dropdownIntro img {
+            border: none;
         }
         #exampleContainer {
             width:1000px;
@@ -149,6 +164,7 @@
         }
         h3 {
             border-left: #61ddac 10px solid;
+            margin: 15px 0;
         }
         #example {
             float:left;
@@ -156,49 +172,69 @@
         }
         #example1 {
             width:330px;
-            margin:6px;
+        }
+        .exampleCover {
+            position:relative;
+        }
+        .exampleCover p {
+            text-align: center;
+            height:50px;
+            line-height: 50px;
+            color:white;
+            position:absolute;
+            background-color: black;
+            opacity: 0.6;
+            bottom:5px;
+            width:100%;
         }
         #example2 {
             width:330px;
             margin:6px;
         }
         #example3 {
-            width:155px;
+            width:150px;
             margin:6px;
-            float:left;
         }
         #example4 {
-            width:155px;
+            width:150px;
             margin:6px;
-            float:left;
         }
         #example5 {
             width:680px;
         }
+        .boxBox {
+            float: left;
+        }
         .floatingOne {
             float:left;
+            margin:6px;
+            width:330px;
         }
         #rightPanel {
             float:right;
             width:300px;
         }
         #rightPanel ul {
-            list-style: none;
             overflow: hidden;
             zoom:1;
-            list-style: none;
+            list-style: url("blackDot.png");
+
         }
         #rightPanel li {
-            width:150px;
+            width:128px;
             height:40px;
             float:left;
+            margin-left: 22px;
         }
         #rightPanel a{
             text-decoration: none;
-            color: black;
+            color: #666666;
         }
-        #rightPanel a:hover {
-            color:red;
+        #rightPanel li:hover {
+            list-style: url("redDot.png");
+        }
+        #rightPanel li:hover a{
+            color: #ff3300;
         }
         #RPTop {
             height:200px;
@@ -238,7 +274,7 @@
             </ul>
             <form>
                 <input type="text" placeholder="请输入关键字">
-                <input type="submit" value="">
+                <input type="submit" value="" >
             </form>
         </div>
     </div>
@@ -265,16 +301,28 @@
         <div>
             <div class="floatingOne">
                 <img src="example1.png" id="example1">
+                <div class="exampleCover">
+                    <p>小户型也有大智慧</p>
+                </div>
             </div>
             <div class="floatingOne">
-                <div>
+                <div class="boxBox">
                     <img src="example2.png" id="example2">
+                    <div class="exampleCover">
+                        <p>小户型也有大智慧</p>
+                    </div>
                 </div>
-                <div>
+                <div class="boxBox">
                     <img src="example3.png" id="example3">
+                    <div class="exampleCover">
+                        <p>小户型也有大智慧</p>
+                    </div>
                 </div>
-                <div>
+                <div class="boxBox">
                     <img src="example4.png" id="example4">
+                    <div class="exampleCover">
+                        <p>小户型也有大智慧</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -282,7 +330,7 @@
     </div>
     <div id="rightPanel">
         <div id="RPTop">
-            <h3>案例展示</h3>
+            <h3>&nbsp;案例展示</h3>
             <ul>
                 <li><a href="#">厂房装修</a></li>
                 <li><a href="#">厂房装修</a></li>
@@ -294,6 +342,7 @@
                 <li><a href="#">厂房装修</a></li>
             </ul>
         </div>
+
     </div>
 </div>
 
@@ -301,38 +350,38 @@
 <script>
     var timer1, timer2;
     var topspace = -230;
-    // function dropdown() {
-    //     if (timer2) {
-    //         clearInterval(timer2);
-    //     }
-    //     timer1 = setInterval(down, 1);
-    //     function down(){
-    //         if (topspace == 0) {
-    //             document.getElementById("curtain").style.top= topspace + "px";
-    //             clearInterval(timer1);
-    //         }
-    //         else {
-    //             document.getElementById("curtain").style.top= topspace + "px";
-    //             topspace++;
-    //         }
-    //     }
-    // }
-    // function goUp() {
-    //     if (timer1) {
-    //         clearInterval(timer1);
-    //     }
-    //     timer2 = setInterval(up, 1);
-    //     function up(){
-    //         if (topspace == -230) {
-    //             document.getElementById("curtain").style.top= topspace + "px";
-    //             clearInterval(timer2);
-    //         }
-    //         else {
-    //             document.getElementById("curtain").style.top= topspace + "px";
-    //             topspace--;
-    //         }
-    //     }
-    // }
+    function dropdown() {
+        if (timer2) {
+            clearInterval(timer2);
+        }
+        timer1 = setInterval(down, 1);
+        function down(){
+            if (topspace == 0) {
+                document.getElementById("curtain").style.top= topspace + "px";
+                clearInterval(timer1);
+            }
+            else {
+                document.getElementById("curtain").style.top= topspace + "px";
+                topspace++;
+            }
+        }
+    }
+    function goUp() {
+        if (timer1) {
+            clearInterval(timer1);
+        }
+        timer2 = setInterval(up, 1);
+        function up(){
+            if (topspace == -230) {
+                document.getElementById("curtain").style.top= topspace + "px";
+                clearInterval(timer2);
+            }
+            else {
+                document.getElementById("curtain").style.top= topspace + "px";
+                topspace--;
+            }
+        }
+    }
 </script>
 </body>
 </html>

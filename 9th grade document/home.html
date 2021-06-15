@@ -61,6 +61,36 @@
             border: 2px solid #61ddac;
             text-align: center;
         }
+        #container {
+            width:1000px;
+            margin:0 auto;
+        }
+        .indieContainer {
+            height:500px;
+            margin: 20px 0;
+        }
+        .wordContainer {
+            width:500px;
+            height:500px;
+            float:left;
+        }
+        .imgContainer {
+            width:500px;
+            float:left;
+        }
+        .imgContainer img {
+            width:400px;
+            height:400px;
+            margin:0 auto;
+        }
+        #signUp {
+            width:300px;
+            height:150px;
+            border: #61ddac 2px solid;
+            border-radius: 10px;
+            margin:0 auto;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -80,18 +110,120 @@
 </div>
 <h1 style="text-align: center">Club Management Platform</h1>
 <div id="intro">
-    <div class="selector" onclick="changeselector(this)"><h3>Students</h3></div>
-    <div class="selector" onclick="changeselector(this)"><h3>Facilities</h3></div>
-    <div class="selector" onclick="changeselector(this)"><h3>Parents</h3></div>
+    <div class="selector" onclick="changeStudent(this)" style="border-bottom: none"><h3>Students</h3></div>
+    <div class="selector" onclick="changeFaculties(this)"><h3>Faculties</h3></div>
+    <div class="selector" onclick="changeParent(this)"><h3>Parents</h3></div>
 </div>
-
+<div id="container">
+    <div id="studentIntro" class="introContainer">
+        <div class="indieContainer">
+            <div class="wordContainer">
+                <p>Washington Heights is a neighborhood in the uppermost part of the New York City borough of Manhattan. It is named for Fort Washington, a fortification constructed at the highest natural point on Manhattan Island by Continental Army troops to defend the area from the British forces during the American Revolutionary War. Washington Heights is bordered by Inwood to the north along Dyckman Street, by Harlem to the south along 155th Street, by the Harlem River and Coogan's Bluff to the east, and by the Hudson River to the west.</p>
+            </div>
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+        </div>
+        <div class="indieContainer">
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+            <div class="wordContainer">
+                <p>Washington Heights is a neighborhood in the uppermost part of the New York City borough of Manhattan. It is named for Fort Washington, a fortification constructed at the highest natural point on Manhattan Island by Continental Army troops to defend the area from the British forces during the American Revolutionary War. Washington Heights is bordered by Inwood to the north along Dyckman Street, by Harlem to the south along 155th Street, by the Harlem River and Coogan's Bluff to the east, and by the Hudson River to the west.</p>
+            </div>
+        </div>
+        <div class="indieContainer">
+            <div class="wordContainer">
+                <p>Washington Heights is a neighborhood in the uppermost part of the New York City borough of Manhattan. It is named for Fort Washington, a fortification constructed at the highest natural point on Manhattan Island by Continental Army troops to defend the area from the British forces during the American Revolutionary War. Washington Heights is bordered by Inwood to the north along Dyckman Street, by Harlem to the south along 155th Street, by the Harlem River and Coogan's Bluff to the east, and by the Hudson River to the west.</p>
+            </div>
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="facultyIntro" class="introContainer">
+        <div class="indieContainer">
+            <div class="wordContainer">
+                <p>Washington Heights, which before the 20th century was sparsely populated by luxurious mansions and single-family homes, was rapidly developed during the early 1900s as the neighborhood became connected to the rest of Manhattan via the A, C, and 1 subway lines. Beginning as a middle-class neighborhood with many Irish and Eastern European immigrants, the neighborhood has at various points been home to communities of German Jews, Greek Americans, Puerto Ricans, Cuban Americans, and Russian Americans. Throughout the 1960s and 1970s, White residents began to leave the neighborhood for nearby suburbs as the Black and Latino populations increased. Dominican Americans became the dominant group by the 1980s despite facing difficult economic circumstances, leading the neighborhood to its status today as the most prominent Dominican community in the United States. While crime became a serious issue during the crack cocaine crisis of the 1980s and 1990s, in the 2000s Washington Heights became a much safer community and began to experience some upward mobility as well as gentrification.</p>
+            </div>
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+        </div>
+        <div class="indieContainer">
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+            <div class="wordContainer">
+                <p>Washington Heights, which before the 20th century was sparsely populated by luxurious mansions and single-family homes, was rapidly developed during the early 1900s as the neighborhood became connected to the rest of Manhattan via the A, C, and 1 subway lines. Beginning as a middle-class neighborhood with many Irish and Eastern European immigrants, the neighborhood has at various points been home to communities of German Jews, Greek Americans, Puerto Ricans, Cuban Americans, and Russian Americans. Throughout the 1960s and 1970s, White residents began to leave the neighborhood for nearby suburbs as the Black and Latino populations increased. Dominican Americans became the dominant group by the 1980s despite facing difficult economic circumstances, leading the neighborhood to its status today as the most prominent Dominican community in the United States. While crime became a serious issue during the crack cocaine crisis of the 1980s and 1990s, in the 2000s Washington Heights became a much safer community and began to experience some upward mobility as well as gentrification.</p>
+            </div>
+        </div>
+        <div class="indieContainer">
+            <div class="wordContainer">
+                <p>Washington Heights, which before the 20th century was sparsely populated by luxurious mansions and single-family homes, was rapidly developed during the early 1900s as the neighborhood became connected to the rest of Manhattan via the A, C, and 1 subway lines. Beginning as a middle-class neighborhood with many Irish and Eastern European immigrants, the neighborhood has at various points been home to communities of German Jews, Greek Americans, Puerto Ricans, Cuban Americans, and Russian Americans. Throughout the 1960s and 1970s, White residents began to leave the neighborhood for nearby suburbs as the Black and Latino populations increased. Dominican Americans became the dominant group by the 1980s despite facing difficult economic circumstances, leading the neighborhood to its status today as the most prominent Dominican community in the United States. While crime became a serious issue during the crack cocaine crisis of the 1980s and 1990s, in the 2000s Washington Heights became a much safer community and began to experience some upward mobility as well as gentrification.</p>
+            </div>
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="parentIntro" class="introContainer">
+        <div class="indieContainer">
+            <div class="wordContainer">
+                <p>Washington Heights is set apart among Manhattan neighborhoods for its high residential density despite the lack of modern construction, with the majority of its few high-rise buildings belonging to the NewYork–Presbyterian Hospital / Columbia University Medical Center. Other higher education institutions include Yeshiva University and Boricua College. The neighborhood has generous access to green space in Fort Washington Park, Highbridge Park, and Fort Tryon Park, home to the historical landmarks the Little Red Lighthouse, the High Bridge Water Tower, and the Cloisters respectively. Other points of interest include Audubon Terrace, the Morris–Jumel Mansion, the United Palace, the Audubon Ballroom, and the Fort Washington Avenue Armory.<br/>Washington Heights is part of Manhattan Community District 12, and its primary ZIP Codes are 10032, 10033, and 10040. It is served by the 33rd and 34th Precincts of the New York City Police Department and Engine Companies 67, 84, and 93 of the New York City Fire Department. Politically, it is part of the New York City Council's 7th and 10th districts.</p>
+            </div>
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+        </div>
+        <div class="indieContainer">
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+            <div class="wordContainer">
+                <p>Washington Heights is set apart among Manhattan neighborhoods for its high residential density despite the lack of modern construction, with the majority of its few high-rise buildings belonging to the NewYork–Presbyterian Hospital / Columbia University Medical Center. Other higher education institutions include Yeshiva University and Boricua College. The neighborhood has generous access to green space in Fort Washington Park, Highbridge Park, and Fort Tryon Park, home to the historical landmarks the Little Red Lighthouse, the High Bridge Water Tower, and the Cloisters respectively. Other points of interest include Audubon Terrace, the Morris–Jumel Mansion, the United Palace, the Audubon Ballroom, and the Fort Washington Avenue Armory.<br/>Washington Heights is part of Manhattan Community District 12, and its primary ZIP Codes are 10032, 10033, and 10040. It is served by the 33rd and 34th Precincts of the New York City Police Department and Engine Companies 67, 84, and 93 of the New York City Fire Department. Politically, it is part of the New York City Council's 7th and 10th districts.</p>
+            </div>
+        </div>
+        <div class="indieContainer">
+            <div class="wordContainer">
+                <p>Washington Heights is set apart among Manhattan neighborhoods for its high residential density despite the lack of modern construction, with the majority of its few high-rise buildings belonging to the NewYork–Presbyterian Hospital / Columbia University Medical Center. Other higher education institutions include Yeshiva University and Boricua College. The neighborhood has generous access to green space in Fort Washington Park, Highbridge Park, and Fort Tryon Park, home to the historical landmarks the Little Red Lighthouse, the High Bridge Water Tower, and the Cloisters respectively. Other points of interest include Audubon Terrace, the Morris–Jumel Mansion, the United Palace, the Audubon Ballroom, and the Fort Washington Avenue Armory.<br/>Washington Heights is part of Manhattan Community District 12, and its primary ZIP Codes are 10032, 10033, and 10040. It is served by the 33rd and 34th Precincts of the New York City Police Department and Engine Companies 67, 84, and 93 of the New York City Fire Department. Politically, it is part of the New York City Council's 7th and 10th districts.</p>
+            </div>
+            <div class="imgContainer">
+                <img src="homeDemo.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="signUp">
+    <a href="Signup.html"><h1>Sign up</h1></a>
+</div>
 <script>
+    document.getElementById("facultyIntro").style.display = "none";
+    document.getElementById("parentIntro").style.display = "none";
     function changeselector (element) {
         var selectlist = document.getElementsByClassName("selector");
         for (i=0;i<selectlist.length;i++) {
             selectlist[i].style.borderBottom = "2px solid #61ddac";
         }
         element.style.borderBottom = "none";
+    }
+    function changeStudent(element) {
+        changeselector(element);
+        document.getElementById("studentIntro").style.display = "block";
+        document.getElementById("facultyIntro").style.display = "none";
+        document.getElementById("parentIntro").style.display = "none";
+    }
+    function changeFaculties(element) {
+        changeselector(element);
+        document.getElementById("studentIntro").style.display = "none";
+        document.getElementById("facultyIntro").style.display = "block";
+        document.getElementById("parentIntro").style.display = "none";
+    }
+    function changeParent(element) {
+        changeselector(element);
+        document.getElementById("studentIntro").style.display = "none";
+        document.getElementById("facultyIntro").style.display = "none";
+        document.getElementById("parentIntro").style.display = "block";
     }
 </script>
 </body>
