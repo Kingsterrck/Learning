@@ -132,6 +132,10 @@
             float:none;
             margin:10px auto;
         }
+        .clubLink {
+            width:330px;
+            height:330px;
+        }
         #browseAll {
             width: 300px;
             margin: 0 auto;
@@ -157,7 +161,7 @@
     <div id="dropdown">
         <div>
             <h1 onclick="dropdown()">&#128317;</h1>
-            <img src="cute%20dog%20circle.png">
+            <img src="cute_dog_circle.png">
         </div>
     </div>
 </div>
@@ -209,21 +213,21 @@
     </div>
     <div id="discover">
         <h1>Discover</h1>
-        <div>
+        <div id="topGrowing">
             <h2>Top growing</h2>
-            <a href="clubRedirect.html">
+            <a class="clubLink" href="clubRedirect.html">
                 <div class="indieClubs">
                     <img src="language.png" class="joinedIcons">
                     <h3>foreign language</h3>
                 </div>
             </a>
-            <a href="clubRedirect.html">
+            <a class="clubLink" href="clubRedirect.html">
                 <div class="indieClubs">
                     <img src="musical.png" class="joinedIcons">
                     <h3>musical</h3>
                 </div>
             </a>
-            <a href="clubRedirect.html">
+            <a class="clubLink" href="clubRedirect.html">
                 <div class="indieClubs">
                     <img src="movie.png" class="joinedIcons">
                     <h3>movie</h3>
@@ -231,8 +235,8 @@
             </a>
         </div>
     </div>
-    <div style="margin-top: 20px;">
-        <h1>With most members</h1>
+    <div style="margin-top: 20px;height:400px;">
+        <h2>With most members</h2>
         <a href="clubRedirect.html">
             <div class="indieClubs">
                 <img src="cWriting.png" class="joinedIcons">
@@ -256,6 +260,20 @@
     var wide = window.innerWidth;
     document.getElementById("main").style.width=0.8*wide + "px"; //set the width
     document.getElementById("menu").style.left=0.867*wide + "px";
+    var a = document.getElementsByClassName("indieClubs");
+    for (i=0;i<a.length;i++) {
+        a[i].style.width=0.22*wide + "px";
+        a[i].style.height=0.22*wide + "px";
+        a[i].style.marginTop=0.0066*wide + "px";
+        a[i].style.marginBottom=0.0066*wide + "px";
+        a[i].style.marginLeft=0.02*wide + "px";
+        a[i].style.marginRight=0.02*wide + "px";
+    }
+    var b = document.getElementsByClassName("joinedIcons");
+    for (i=0;i<b.length;i++) {
+        b[i].style.width=0.14*wide + "px";
+        b[i].style.height=0.14*wide + "px";
+    }
     var clicktime = 0;
     function dropdown(){
         if (clicktime % 2 == 0) {
