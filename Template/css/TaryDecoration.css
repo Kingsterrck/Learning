@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    border:none;
+}
+#head {
+    background-image: url("../images/Taryhead.jpg");
+    height: 97px;
+    background-position-x: -220px;
+}
+#headBox {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom:1;
+}
+#headLinkBox {
+    float:right;
+}
+#headLinkBox a {
+    text-decoration: none;
+    color: #767171;
+    font-size: 13px;
+}
+#headBox img {
+    width:304px;
+}
+#headBoxBottom {
+    margin:25px 0;
+    overflow: hidden;
+    zoom: 1;
+}
+#headBoxBottom a {
+    float: left;
+}
+#headBoxBottom div {
+    float:right;
+}
+#headBoxBottom span {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right:168px;
+}
+#headBoxBottom span:first-child {
+    color: #7F4A55;
+}
+#headBoxBottom span:last-child {
+    color:#8B8B8B;
+    font-size: 15px;
+}
+#topIntro {
+    position: relative;
+    padding-bottom: 15px;
+    background-color: #f7f7f7;
+}
+#topNav {
+    position: absolute;
+    width:100%;
+}
+#topNav div {
+    width:1000px;
+    margin:0 auto; /*center*/
+    overflow: hidden;
+    zoom: 1;
+}
+#topNav ul {
+    overflow: hidden;
+    zoom:1;
+    float: left;
+    list-style: none;
+}
+#topNav li {
+    float: left;
+    background-color: #363636;
+    border-right:solid white 1px;
+    text-align: center;
+
+}
+#topNav li:hover {
+    background-color: #00ada7;
+}
+#topNav a {
+    text-decoration: none;
+    color: white;
+    width: 97px;
+    padding: 13px 0px;
+    display: inline-block;
+    font-size: 15px;
+}
+#topNav form {
+    overflow: hidden;
+    zoom:1;
+    background-image: url("../images/searchBox.png");
+    float: left;
+}
+#topNav input {
+    float: left;
+    height:46px;
+    border: none;
+}
+#topNav input[type="submit"] {
+    width:55px;
+    background: none;
+}
+#topNav input:first-child {
+    width: 160px;
+    background: none;
+}
+#topNav input:last-child {
+    width:56px;
+    background: none;
+}
+#container2 {
+    overflow: hidden;
+    zoom:1;
+    background-color: #f7f7f7;
+    padding-bottom: 15px;
+    border-bottom:2px solid #696969;
+}
+#container {
+    width:1000px;
+    height:230px;
+    margin: 0px auto;
+    background-image: url("../images/dropdown.png");
+    position: relative;
+    overflow: hidden;
+    zoom:1;
+}
+#curtain {
+    width:100%;
+    height: 100%;
+    background-image: url("../images/semitransparent.png");
+    opacity:60%;
+    position: absolute;
+    top:0px;
+}
+#dropdownIntro {
+    height: 100%;
+    padding: 47px 0;
+}
+#dropdownIntro a:first-child {
+    margin-left: 57px;
+}
+#dropdownIntro a {
+    float:left;
+    margin-left:114px;
+    color:white;
+    background: none;
+}
+#dropdownIntro img {
+    border: none;
+}
+#exampleContainer {
+    width:1000px;
+    margin:0 auto;
+    overflow: hidden;
+    zoom:1;
+}
+h3 {
+    border-left: #61ddac 10px solid;
+    margin: 15px 0;
+}
+#example {
+    float:left;
+    width:700px;
+}
+#example1 {
+    width:330px;
+}
+.exampleCover {
+    position:relative;
+}
+.exampleCover p {
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    color:white;
+    position:absolute;
+    background-color: black;
+    opacity: 0.6;
+    bottom:5px;
+    width:100%;
+}
+#example2 {
+    width:330px;
+}
+#example3 {
+    width:153px;
+}
+#example4 {
+    width:153px;
+}
+#example5 {
+    width:680px;
+}
+.boxBox {
+    float: left;
+    margin:6px;
+}
+.floatingOne {
+    float:left;
+    margin:6px;
+    width:330px;
+    overflow: hidden;
+    zoom:1;
+}
+#rightPanel {
+    float:right;
+    width:300px;
+}
+#rightPanel ul {
+    overflow: hidden;
+    zoom:1;
+    list-style: url("../images/blackDot.png");
+}
+#rightPanel li {
+    width:128px;
+    height:40px;
+    float:left;
+    margin-left: 22px;
+}
+#rightPanel a{
+    text-decoration: none;
+    color: #666666;
+}
+#rightPanel li:hover {
+    list-style: url("../images/redDot.png");
+}
+#rightPanel li:hover a{
+    color: #ff3300;
+}
+#RPTop {
+    height:200px;
+}
+#broContainer {
+    width:1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+#imgContainer {
+    width: 1152px;
+    overflow: hidden;
+    zoom:1;
+    position: relative;
+}
+#imgContainer img {
+    width: 180px;
+    height:180px;
+    margin:5px;
+    border:grey 1px solid;
+    float:left;
+}

@@ -3,243 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            border:none;
-        }
-        #head {
-            background-image: url("Taryhead.jpg");
-            height: 97px;
-            background-position-x: -220px;
-        }
-        #headBox {
-            width: 980px;
-            margin: 0 auto;
-            overflow: hidden;
-            zoom:1;
-        }
-        #headLinkBox {
-            float:right;
-        }
-        #headLinkBox a {
-            text-decoration: none;
-            color: #767171;
-            font-size: 13px;
-        }
-        #headBox img {
-            width:304px;
-        }
-        #headBoxBottom {
-            margin:25px 0;
-            overflow: hidden;
-            zoom: 1;
-        }
-        #headBoxBottom a {
-            float: left;
-        }
-        #headBoxBottom div {
-            float:right;
-        }
-        #headBoxBottom span {
-            display: inline-block;
-            margin-top: 20px;
-            margin-right:168px;
-        }
-        #headBoxBottom span:first-child {
-            color: #7F4A55;
-        }
-        #headBoxBottom span:last-child {
-            color:#8B8B8B;
-            font-size: 15px;
-         }
-        #topIntro {
-            position: relative;
-            padding-bottom: 15px;
-            background-color: #f7f7f7;
-        }
-        #topNav {
-            position: absolute;
-            width:100%;
-        }
-        #topNav div {
-            width:1000px;
-            margin:0 auto; /*center*/
-            overflow: hidden;
-            zoom: 1;
-        }
-        #topNav ul {
-            overflow: hidden;
-            zoom:1;
-            float: left;
-            list-style: none;
-        }
-        #topNav li {
-            float: left;
-            background-color: #363636;
-            border-right:solid white 1px;
-            text-align: center;
-
-        }
-        #topNav li:hover {
-            background-color: #00ada7;
-        }
-        #topNav a {
-            text-decoration: none;
-            color: white;
-            width: 97px;
-            padding: 13px 0px;
-            display: inline-block;
-            font-size: 15px;
-        }
-        #topNav form {
-            overflow: hidden;
-            zoom:1;
-            background-image: url("searchBox.png");
-            float: left;
-        }
-        #topNav input {
-            float: left;
-            height:46px;
-            border: none;
-        }
-        #topNav input[type="submit"] {
-            width:55px;
-            background: none;
-        }
-        #topNav input:first-child {
-            width: 160px;
-            background: none;
-        }
-        #topNav input:last-child {
-            width:56px;
-            background: none;
-        }
-        #container2 {
-            overflow: hidden;
-            zoom:1;
-            background-color: #f7f7f7;
-            padding-bottom: 15px;
-            border-bottom:2px solid #696969;
-        }
-        #container {
-            width:1000px;
-            height:230px;
-            margin: 0px auto;
-            background-image: url("dropdown.png");
-            position: relative;
-            overflow: hidden;
-            zoom:1;
-        }
-        #curtain {
-            width:100%;
-            height: 100%;
-            background-image: url("semitransparent.png");
-            opacity:60%;
-            position: absolute;
-            top:0px;
-        }
-        #dropdownIntro {
-            height: 100%;
-            padding: 47px 0;
-        }
-        #dropdownIntro a:first-child {
-            margin-left: 57px;
-        }
-        #dropdownIntro a {
-            float:left;
-            margin-left:114px;
-            color:white;
-            background: none;
-        }
-        #dropdownIntro img {
-            border: none;
-        }
-        #exampleContainer {
-            width:1000px;
-            margin:0 auto;
-        }
-        h3 {
-            border-left: #61ddac 10px solid;
-            margin: 15px 0;
-        }
-        #example {
-            float:left;
-            width:700px;
-        }
-        #example1 {
-            width:330px;
-        }
-        .exampleCover {
-            position:relative;
-        }
-        .exampleCover p {
-            text-align: center;
-            height:50px;
-            line-height: 50px;
-            color:white;
-            position:absolute;
-            background-color: black;
-            opacity: 0.6;
-            bottom:5px;
-            width:100%;
-        }
-        #example2 {
-            width:330px;
-            margin:6px;
-        }
-        #example3 {
-            width:150px;
-            margin:6px;
-        }
-        #example4 {
-            width:150px;
-            margin:6px;
-        }
-        #example5 {
-            width:680px;
-        }
-        .boxBox {
-            float: left;
-        }
-        .floatingOne {
-            float:left;
-            margin:6px;
-            width:330px;
-        }
-        #rightPanel {
-            float:right;
-            width:300px;
-        }
-        #rightPanel ul {
-            overflow: hidden;
-            zoom:1;
-            list-style: url("blackDot.png");
-
-        }
-        #rightPanel li {
-            width:128px;
-            height:40px;
-            float:left;
-            margin-left: 22px;
-        }
-        #rightPanel a{
-            text-decoration: none;
-            color: #666666;
-        }
-        #rightPanel li:hover {
-            list-style: url("redDot.png");
-        }
-        #rightPanel li:hover a{
-            color: #ff3300;
-        }
-        #RPTop {
-            height:200px;
-        }
-    </style>
+    <link type="text/css" href="css/TaryDecoration.css" rel="stylesheet">
 </head>
 <body>
 <div id="head">
@@ -250,7 +14,7 @@
             <a href="#">加入收藏</a>
         </div>
         <div id="headBoxBottom">
-            <a href="#"><img src="taryLogo.png" alt="logo"></a>
+            <a href="#"><img src="images/taryLogo.png" alt="logo"></a>
             <div>
                 <span>家装实力派</span>
                 <span>&#128172;&nbsp;装修热线：0517-85158777</span>
@@ -279,7 +43,7 @@
         </div>
     </div>
     <div>
-        <img src="topBanner.png" style="width:1483px">
+        <img src="images/topBanner.png" style="width:1483px">
     </div>
 </div>
 
@@ -287,10 +51,10 @@
     <div id="container" onmouseover="dropdown()" onmouseout="goUp()">
         <div id="curtain">
             <div id="dropdownIntro">
-                <a href="#"><img src="ideas.png"></a>
-                <a href="#"><img src="teams.png"></a>
-                <a href="#"><img src="cases.png"></a>
-                <a href="#"><img src="service.png"></a>
+                <a href="#"><img src="images/ideas.png"></a>
+                <a href="#"><img src="images/teams.png"></a>
+                <a href="#"><img src="images/cases.png"></a>
+                <a href="#"><img src="images/service.png"></a>
             </div>
         </div>
     </div>
@@ -298,35 +62,35 @@
 <div id="exampleContainer">
     <div id="example">
         <h3>&nbsp;装修效果图</h3>
-        <div>
+        <div style="overflow: hidden;zoom:1">
             <div class="floatingOne">
-                <img src="example1.png" id="example1">
+                <img src="images/examples/example1.png" id="example1">
                 <div class="exampleCover">
                     <p>小户型也有大智慧</p>
                 </div>
             </div>
             <div class="floatingOne">
                 <div class="boxBox">
-                    <img src="example2.png" id="example2">
+                    <img src="images/examples/example2.png" id="example2">
                     <div class="exampleCover">
                         <p>小户型也有大智慧</p>
                     </div>
                 </div>
                 <div class="boxBox">
-                    <img src="example3.png" id="example3">
+                    <img src="images/examples/example3.png" id="example3">
                     <div class="exampleCover">
                         <p>小户型也有大智慧</p>
                     </div>
                 </div>
                 <div class="boxBox">
-                    <img src="example4.png" id="example4">
+                    <img src="images/examples/example4.png" id="example4">
                     <div class="exampleCover">
                         <p>小户型也有大智慧</p>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="example5.png" id="example5">
+        <img src="images/examples/example5.png" id="example5">
     </div>
     <div id="rightPanel">
         <div id="RPTop">
@@ -342,46 +106,23 @@
                 <li><a href="#">厂房装修</a></li>
             </ul>
         </div>
-
+        <div>
+            <h3></h3>
+        </div>
     </div>
 </div>
+<div id="broContainer">
+    <div id="imgContainer">
+        <a href="#"><img src="images/slides/slide1.png"></a>
+        <a href="#"><img src="images/slides/slide2.png"></a>
+        <a href="#"><img src="images/slides/slide3.png"></a>
+        <a href="#"><img src="images/slides/slide4.png"></a>
+        <a href="#"><img src="images/slides/slide5.png"></a>
+        <a href="#"><img src="images/slides/slide6.png"></a>
+    </div>
 
+</div>
 
-<script>
-    var timer1, timer2;
-    var topspace = -230;
-    function dropdown() {
-        if (timer2) {
-            clearInterval(timer2);
-        }
-        timer1 = setInterval(down, 1);
-        function down(){
-            if (topspace == 0) {
-                document.getElementById("curtain").style.top= topspace + "px";
-                clearInterval(timer1);
-            }
-            else {
-                document.getElementById("curtain").style.top= topspace + "px";
-                topspace++;
-            }
-        }
-    }
-    function goUp() {
-        if (timer1) {
-            clearInterval(timer1);
-        }
-        timer2 = setInterval(up, 1);
-        function up(){
-            if (topspace == -230) {
-                document.getElementById("curtain").style.top= topspace + "px";
-                clearInterval(timer2);
-            }
-            else {
-                document.getElementById("curtain").style.top= topspace + "px";
-                topspace--;
-            }
-        }
-    }
-</script>
+<script src="js/taryDecoration.js"></script>
 </body>
 </html>
