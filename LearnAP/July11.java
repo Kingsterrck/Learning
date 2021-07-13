@@ -45,5 +45,6 @@ public class July11 {
         int n = input.nextInt();
         int week = n % 7;
         System.out.println(week+2);
+        input.close();
     }
 }
