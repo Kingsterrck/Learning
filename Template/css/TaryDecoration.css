@@ -240,7 +240,7 @@ h3 {
     overflow: hidden;
 }
 #imgContainer {
-    width: 1152px;
+    width: 2304px;
     overflow: hidden;
     zoom:1;
     position: relative;
@@ -251,4 +251,43 @@ h3 {
     margin:5px;
     border:grey 1px solid;
     float:left;
+}
+#footerContainer {
+    background-color: #444444;
+}
+#footer {
+    width:1000px;
+    margin:0 auto;
+    overflow: hidden;
+    zoom: 1;
+    line-height: 26px;
+}
+#footerBox1 {
+    margin:15px 0;
+    float: left;
+}
+#footerBox1 ul {
+    overflow: hidden;
+    zoom: 1;
+    list-style: none;
+}
+#footerBox1 li {
+    float: left;
+    color: #00ADA7;
+    font-size: 13px;
+}
+#footerBox1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00ADA7;
+}
+#footerBox1 p {
+    color: #00ADA7;
+}
+#footerBox2 {
+    margin-top:15px;
+    margin-right:20px;
+    color: #00ADA7;
+    float: right;
+    text-align: left;
 }

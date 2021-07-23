@@ -32,20 +32,24 @@ function goUp() {
         }
     }
 }
+var scrollTimer;
+var leftspace = 0;
 scroll()
-var leftspace;
 document.getElementById("imgContainer").style.left=leftspace + "px";
 function scroll() {
-    var scrollTimer;
-    scrollTimer = setInterval(move, 1);
+    scrollTimer = setInterval(move, 20);
     function move() {
-        if (leftspace == -180) {
-            clearInterval(scrollTimer);
+        if (leftspace == -1150) {
+            leftspace = 0;
         } else {
             leftspace--;
             document.getElementById("imgContainer").style.left=leftspace + "px";
         }
     }
 }
-
-
+function pauseSlide() {
+    clearInterval(scrollTimer);
+}
+function keepSlide() {
+    scroll();
+}
