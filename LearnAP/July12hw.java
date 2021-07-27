@@ -7,9 +7,9 @@ public class July12hw {
 
         //1.02
         Scanner input = new Scanner(System.in);
-        int int1 = input.nextInt();
+        //int int1 = input.nextInt();
         int int2 = input.nextInt();
-        int int3 = input.nextInt();
+        // int int3 = input.nextInt();
         System.out.println(int2);
 
         //1.03 idk
@@ -77,18 +77,18 @@ public class July12hw {
         System.out.println(" ");
 
         //2.01
-        int intSample = 1;
-        short shortSample = 1;
+        //int intSample = 1;
+        //short shortSample = 1;
         System.out.println("4 bytes  2 bytes");
 
         //2.02
-        float floatSample = 2;
-        double doubleSample = 2;
+        //float floatSample = 2;
+        //double doubleSample = 2;
         System.out.println("4 bytes  8 bytes");
 
         //2.03
-        char a = 3;
-        boolean boolSample = true;
+        //char a = 3;
+        //boolean boolSample = true;
         System.out.println("I don't know");
 
         //2.04
@@ -105,9 +105,9 @@ public class July12hw {
 
         //2.08 idk
         int random = input.nextInt();
-        boolean random2;
-        random2 = random;
-        random = random2;
+        //boolean random2;
+        //random2 = random;
+        //random = random2;
         System.out.println(random);
 
         //2.09 idk

@@ -1,5 +1,5 @@
-import java.util.Scanner;
-import java.util.TimeZone;
+//import java.util.Scanner;
+//import java.util.TimeZone;
 
 
 public class July12 {
@@ -41,7 +41,7 @@ public class July12 {
         // System.out.println(a);
         // System.out.println(b);
 
-        double a = 2.5;
+        //double a = 2.5;
         double b = 2.5%1;
         System.out.println(b);
         

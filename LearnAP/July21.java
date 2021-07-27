@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import org.graalvm.compiler.lir.LIRInstruction.Temp;
+//import org.graalvm.compiler.lir.LIRInstruction.Temp;
 
 public class July21 {
     public static void main(String[] args) {
@@ -94,22 +94,24 @@ public class July21 {
         // case 10: System.out.println("horse");break;
         // case 11: System.out.println("sheep");break;
         // }
-        double w = input.nextDouble();
-        double c;
-        if (0 < w =< 1) {
-            c = 3.5;
-            System.out.println(c);
-        } else if (1 < w =< 3) {
-            c = 5.5;
-            System.out.println(c);
-        } else if (3 < w =< 10) {
-            c = 8.5;
-            System.out.println(c);
-        } else if (10 < w =< 20) {
-            c = 10.5;
-            System.out.println(c);
-        } else {
-            System.out.println("the package cannot be shipped");
-        }
+        //double w = input.nextDouble();
+        //double c;
+        // if (0 < w =< 1) {
+        //     c = 3.5;
+        //     System.out.println(c);
+        // } else if (1 < w =< 3) {
+        //     c = 5.5;
+        //     System.out.println(c);
+        // } else if (3 < w =< 10) {
+        //     c = 8.5;
+        //     System.out.println(c);
+        // } else if (10 < w =< 20) {
+        //     c = 10.5;
+        //     System.out.println(c);
+        // } else {
+        //     System.out.println("the package cannot be shipped");
+        // }
+
+        input.close();
     }
 }
