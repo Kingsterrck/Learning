@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center">
+<input type="button" value="获取目标网页源码" onclick="getSource('https://blog.csdn.net/weixin_30604651/article/details/96854248')">
+<script>
+    //上移
+    function getSource(url){
+        var dex = url.indexOf("?");
+        if(dex == -1){
+            url = url + "?timestampt=" + new Date();
+        } else {
+            url = url + "&timestampt=" + new Date();
+        }
+        send_request(url, callbackGetSource);
+    }
+    function callbackGetSource(){
+        if (http_request.readyState == 4) {
+            if (http_request.status == 200) {
+                var t = http_request.responseText
+                alert(t);
+            } else { //页面不正常
+                alert("screw the website");
+            }
+        }
+    }
+</script>
+
+<!-- ajax -->
+<script>
+    var http_request = null;
+    function send_request(url, method) {
+        http_request = null;
+        if(window.XMLHttpRequest) { //Mozilla 浏览器
+            http_request = new XMLHttpRequest();
+            if (http_request.overrideMimeType) {//设置MiME类别
+                http_request.overrideMimeType('text/xml');
+            }
+        } else if (window.ActiveXObject) { // IE浏览器
+            try {
+                http_request = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {}
+            }
+        }
+        if (!http_request) { // 异常，创建对象实例失败
+            window.alert("不能创建XMLHttpRequest对象实例.");
+            return false;
+        }
+
+        http_request.onreadystatechange = method;
+        http_request.open("GET", url, true);
+        http_request.send(null);
+    }
+
+</script>
+</body>
+</html>

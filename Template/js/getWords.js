@@ -1,12 +1,14 @@
-
-
 function getWords() {
+    var title = document.getElementsByTagName("h1");
+    for (i = 0;i<title.length;i++) {
+        var b = title[i].innerText;
+    }
     var langs = document.getElementsByClassName("lang-en TermText");
     var leng = langs.length;
-    var result = [];
-    for (i = 0; i < 10; i++) {
+    var output = "@ " + b + "\n";
+    for (i = 1; i < 11; i++) {
         var a = langs[parseInt(Math.random()*leng)].innerText;
-        result.push(a);
+        output += i + ", " + a + "\n";
     }
-    console.log(result);
+    console.log(output);
 }
