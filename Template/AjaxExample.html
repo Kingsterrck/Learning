@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body style="text-align: center">
-<input type="button" value="获取目标网页源码" onclick="getSource('https://blog.csdn.net/weixin_30604651/article/details/96854248')">
+<input type="button" value="获取目标网页源码" onclick="getSource('https://quizlet.com/latest')">
 <script>
     //上移
     function getSource(url){
@@ -23,7 +23,7 @@
                 var t = http_request.responseText
                 alert(t);
             } else { //页面不正常
-                alert("screw the website");
+                alert("您所请求的页面有异常。");
             }
         }
     }
