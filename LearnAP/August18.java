@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class August18 {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         //System.out.println("enter a nonnegative integer ");
         //System.out.println("enter the base: ");
