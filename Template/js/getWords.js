@@ -65,8 +65,6 @@ function getWords3() {
     }
     var wordList = document.getElementsByClassName("lang-en TermText"); //get all the words
     var list = [];
-
-
     
     for (i=0;i<wordList.length;i++){ // copy words to list
         if (wordList[i].innerText.includes("-") === false) {
