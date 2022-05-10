@@ -1,4 +1,4 @@
-package DDCS;
+package LearnAP.DDCS;
 import java.util.Scanner;
 public class September23 {
     public static void main(String[] args) {

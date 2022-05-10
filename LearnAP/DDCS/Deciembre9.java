@@ -1,4 +1,4 @@
-package DDCS;
+package LearnAP.DDCS;
 import java.util.Scanner;
 
 public class Deciembre9 {
@@ -12,7 +12,7 @@ public class Deciembre9 {
         int n = input.nextInt();
         int[] randList = new int[n];
         for (int i = 0;i<n;i++) {
-            randList[i] = (int)(100*Math.random());
+            randList[i] = (int)(1000*Math.random());
         }
         int smallest = randList[0];
         for (int i = 1;i < n;i++) {

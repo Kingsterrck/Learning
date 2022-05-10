@@ -1,3 +1,4 @@
+package LearnAP;
 import java.util.Scanner;
 
 //import org.graalvm.compiler.lir.LIRInstruction.Temp;

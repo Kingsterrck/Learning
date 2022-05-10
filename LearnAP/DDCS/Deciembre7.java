@@ -1,4 +1,4 @@
-package DDCS;
+package LearnAP.DDCS;
 
 public class Deciembre7 {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package LearnAP;
 import java.util.Scanner;
 public class August4 {
     public static void main(String[] args) {

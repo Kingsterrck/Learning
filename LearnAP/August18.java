@@ -1,3 +1,4 @@
+package LearnAP;
 import java.util.Scanner;
 
 public class August18 {
