@@ -1,7 +1,8 @@
+package LearnAP;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Main {
+public class CCC17J3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int start = input.nextInt();
